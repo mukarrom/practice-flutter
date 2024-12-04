@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/home_page.dart';
+import 'package:myapp/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const GoogleMapApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class GoogleMapApp extends StatelessWidget {
+  const GoogleMapApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:955708452.
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: const HomePage(),
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
+    return const MaterialApp(
+      home: HomeScreen(),
     );
   }
 }
